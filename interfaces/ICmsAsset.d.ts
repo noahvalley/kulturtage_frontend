@@ -1,0 +1,3 @@
+interface ICmsAsset {
+  path: string
+}

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: ABCDiatype;
+  src: url("/fonts/ABCDiatype-Medium.woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ABCDiatype;
+  src: url("/fonts/ABCDiatype-MediumItalic.woff2");
+  font-style: italic;
+  font-weight: 400;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: ABCDiatype, sans-serif;
+  @apply bg-white text-base tracking-[0.05em] text-black;
+}
+
+*,
+::before,
+::after {
+  background: none;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+label {
+  cursor: pointer;
+}
+
+label,
+small,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+
+button {
+  text-align: left;
+  letter-spacing: inherit;
+}
+
+img {
+  max-width: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.prose {
+}
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose p:last-child {
+  @apply mb-0;
+}
+
+.prose h1 {
+  @apply mb-6 uppercase sm:fixed sm:bottom-0 sm:z-30 sm:mb-0 sm:text-lg sm:normal-case sm:leading-[46px] xl:mb-8 xl:text-lg;
+}
+
+.prose h2 {
+  @apply mb-6 uppercase xl:mb-8 xl:text-lg border-t-2;
+}
+
+.prose h3 {
+  @apply xl:text-lg;
+}
+
+.prose a {
+  @apply text-blue hover:text-black;
+}
+
+/* leaflet */
+/******************************************************************************/
+.leaflet-container {
+  background: #fff;
+  outline: 0;
+}
+.leaflet-marker-icon{
+  @apply bg-yellow flex justify-center rounded-full items-center border
+}
+.leaflet-marker-icon-black{
+  background: black;
+}
