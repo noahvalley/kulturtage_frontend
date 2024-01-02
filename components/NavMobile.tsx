@@ -44,14 +44,14 @@ export default observer(function NavMobile() {
         }`}
       >
         <div className="mt-4">
-          <Link href="/programm">
+          {/* <Link href="/programm">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
             >
               Programm
             </a>
-          </Link>
+          </Link> */}
           <Link href="/news">
             <a
               onClick={() => (d.category = "")}
@@ -60,30 +60,30 @@ export default observer(function NavMobile() {
               News
             </a>
           </Link>
-          <Link href="/tipps">
+          {/* <Link href="/tipps">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
             >
               Tipps
             </a>
-          </Link>
-          <Link href="/standorte">
+          </Link> */}
+          {/* <Link href="/standorte">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
             >
               Standorte
             </a>
-          </Link>
-          <Link href="/service">
+          </Link> */}
+          {/* <Link href="/service">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
             >
               Service
             </a>
-          </Link>
+          </Link> */}
           <button
             onClick={() =>
               (d.category = d.category === "das-festival" ? "" : "das-festival")

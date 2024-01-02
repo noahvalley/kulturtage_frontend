@@ -27,10 +27,11 @@ export default observer(function Navigation() {
         >
           <LogoNeo/>
         </div>
-        <NavLink href="/programm" text="Programm" />
-        <NavLink href="/tipps" text="Tipps" />
-        <NavLink href="/standorte" text="Standorte" />
-        <NavLink href="/service" text="Service" />
+        <NavLink href="/news" text="News" />
+        {/* <NavLink href="/programm" text="Programm" /> */}
+        {/* <NavLink href="/tipps" text="Tipps" /> */}
+        {/* <NavLink href="/standorte" text="Standorte" /> */}
+        {/* <NavLink href="/service" text="Service" /> */}
         <NavLink href="/das-festival" text="Das Festival" />
         {/*<NavLink href="/mitmachen" text="Mitmachen" />*/}
         <NavLink href="/ueber-uns" text="Über uns" />
