@@ -33,7 +33,7 @@ export default function Layout({ children }) {
       </div>
       <NavMobile />
       {/*<div id="portal" className="fixed z-10"></div>*/}
-      <OverlayView />
+      {/* <OverlayView /> */}
       <LoaderView />
       {CONFIG.idleAnimation ? <IdleAnimation /> : null}
     </>
