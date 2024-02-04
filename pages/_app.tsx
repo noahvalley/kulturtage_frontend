@@ -24,6 +24,7 @@ if (typeof window !== "undefined") {
     "/api/singletons/get/_Einstellungen",
     "/api/singletons/get/Bewerben",
     "/api/singletons/get/Konzept",
+    "/api/singletons/get/DerVerein",
     "/api/singletons/get/Ursprung",
     "/api/singletons/get/Kontakt",
     "/api/singletons/get/Team",

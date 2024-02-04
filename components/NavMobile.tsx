@@ -28,8 +28,8 @@ export default observer(function NavMobile() {
   })
 
   return (
-    <nav className="fixed print:hidden right-0 bottom-0 left-0 z-20 hidden sm:block">
-      <section className="flex h-[46px] items-center justify-between border-t print:border-0 bg-white px-6">
+    <nav className="fixed right-0 bottom-0 left-0 z-20 hidden print:hidden sm:block">
+      <section className="flex h-[46px] items-center justify-between border-t bg-white px-6 print:border-0">
         <div>{/*spacer*/}</div>
         <Burger
           open={d.open}
@@ -104,7 +104,6 @@ export default observer(function NavMobile() {
             text="Ursprung"
             show={d.category === "das-festival"}
           />
-
           {/*<button*/}
           {/*  onClick={() =>*/}
           {/*    (d.category = d.category === "mitmachen" ? "" : "mitmachen")*/}
@@ -125,7 +124,6 @@ export default observer(function NavMobile() {
           {/*  text="Bewerben"*/}
           {/*  show={d.category === "mitmachen"}*/}
           {/*/>*/}
-
           <button
             onClick={() =>
               (d.category = d.category === "ueber-uns" ? "" : "ueber-uns")
@@ -142,6 +140,16 @@ export default observer(function NavMobile() {
             show={d.category === "ueber-uns"}
           />
           <NavLink
+            href="/ueber-uns/der-verein"
+            text="Der Verein"
+            show={d.category === "ueber-uns"}
+          />{" "}
+          <NavLink
+            href="/ueber-uns/mitglied-werden"
+            text="Mitglied werden"
+            show={d.category === "ueber-uns"}
+          />
+          <NavLink
             href="/ueber-uns/kontakt"
             text="Kontakt"
             show={d.category === "ueber-uns"}
@@ -153,8 +161,8 @@ export default observer(function NavMobile() {
           />
         </div>
 
-        <div className="mb-4 flex w-full text-sm px-3 justify-between items-center">
-          <Link href={settings.newsletter} blank>
+        <div className="mb-4 flex w-full items-center justify-between px-3 text-sm">
+          <Link href="/newsletter" blank>
             <a>Newsletter</a>
           </Link>
           <Link href="/impressum">
@@ -204,23 +212,23 @@ function Burger({
   return (
     <button
       onClick={onClick}
-      className={`duration-[600ms] print:hidden grid h-[16px] w-6 content-between transition-all  ${
+      className={`grid h-[16px] w-6 content-between transition-all duration-[600ms] print:hidden  ${
         open && "translate-y-[0px]"
       }`}
     >
       <div
-        className={`duration-[inherit] h-[2px] bg-black transition-all  ${
-          open && "rotate-[60deg] translate-y-[7px]"
+        className={`h-[2px] bg-black transition-all duration-[inherit]  ${
+          open && "translate-y-[7px] rotate-[60deg]"
         }`}
       ></div>
       <div
-        className={`duration-[inherit] h-[2px] bg-black transition-all  ${
+        className={`h-[2px] bg-black transition-all duration-[inherit]  ${
           open && ""
         }`}
       ></div>
       <div
-        className={`duration-[inherit] h-[2px] bg-black transition-all  ${
-          open && "rotate-[-60deg] translate-y-[-7px]"
+        className={`h-[2px] bg-black transition-all duration-[inherit]  ${
+          open && "translate-y-[-7px] rotate-[-60deg]"
         }`}
       ></div>
     </button>
