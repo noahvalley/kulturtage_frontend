@@ -65,13 +65,16 @@ export default observer(function Navigation() {
           }`}
         >
           <NavLink href="/ueber-uns/der-verein" text="Der Verein" />
-          <NavLink href="/ueber-uns/mitglied-werden" text="Mitglied werden" />
           <NavLink href="/ueber-uns/team" text="Team" />
           <NavLink href="/ueber-uns/kontakt" text="Kontakt" />
           <NavLink href="/ueber-uns/unterstutzung" text="Unterstützung" />
         </div>
       </section>
       <section className="fixed bottom-4 text-gray xl:text-lg">
+        <NavLink
+          href="https://kulturmacherei.ch/mitglied-werden/"
+          text="Mitglied werden"
+        />
         <NavLink href="/newsletter" text="Newsletter" />
         <NavLink href={settings.instagram ?? ""} text="Instagram" />
         <NavLink href={settings.facebook ?? ""} text="Facebook" />

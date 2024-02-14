@@ -145,11 +145,6 @@ export default observer(function NavMobile() {
             show={d.category === "ueber-uns"}
           />{" "}
           <NavLink
-            href="/ueber-uns/mitglied-werden"
-            text="Mitglied werden"
-            show={d.category === "ueber-uns"}
-          />
-          <NavLink
             href="/ueber-uns/kontakt"
             text="Kontakt"
             show={d.category === "ueber-uns"}
