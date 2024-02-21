@@ -157,6 +157,9 @@ export default observer(function NavMobile() {
         </div>
 
         <div className="mb-4 flex w-full items-center justify-between px-3 text-sm">
+          <Link href="https://kulturmacherei.ch/mitglied-werden/" blank>
+            <a>Mitglied werden</a>
+          </Link>
           <Link href="/newsletter" blank>
             <a>Newsletter</a>
           </Link>
