@@ -20,12 +20,12 @@ export default function Layout({ children }) {
         <Navigation />
         <div
           className={`relative col-end-5 row-start-1 ${
-            wideContent ? "col-start-2" : "col-start-3"
+            wideContent ? "col-start-2" : "col-start-2"
           }`}
         >
           <div
             id="page"
-            className="min-h-screen border-[18px] border-white bg-white sm:border-[12px] sm:pb-[46px]"
+            className="grid min-h-screen border-[18px] border-white bg-white sm:border-[12px] sm:pb-[46px]"
           >
             {children}
           </div>

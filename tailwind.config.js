@@ -34,6 +34,7 @@ module.exports = {
       ["9/16"]: "9/16",
     },
     screens: {
+      xsm: { max: "540px" },
       sm: { max: "1023px" },
       lg: { min: "1280px" },
       xl: { min: "1680px" },

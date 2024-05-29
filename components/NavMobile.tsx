@@ -60,7 +60,15 @@ export default observer(function NavMobile() {
               News
             </a>
           </Link>
-          {/* <Link href="/tipps">
+          {/* <Link href="/mitmachen/bewerben">
+            <a
+              onClick={() => (d.category = "")}
+              className={"block h-12 w-full text-center text-xl"}
+            >
+              Bewerben
+            </a>
+          </Link>
+          <Link href="/tipps">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
@@ -157,7 +165,11 @@ export default observer(function NavMobile() {
         </div>
 
         <div className="mb-4 flex w-full items-center justify-between px-3 text-sm">
-          <Link href="https://kulturmacherei.ch/mitglied-werden/" blank>
+          <Link
+            className="xsm:hidden"
+            href="https://kulturmacherei.ch/mitglied-werden/"
+            blank
+          >
             <a>Mitglied werden</a>
           </Link>
           <Link href="/newsletter" blank>
