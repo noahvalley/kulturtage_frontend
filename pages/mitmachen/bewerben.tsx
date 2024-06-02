@@ -7,7 +7,7 @@ export default function Page() {
 
   return (
     <main className="prose flex flex-col">
-      <h1 className="hidden sm:block">{data.titel}</h1>
+      <h1 className="hidden">{data.titel}</h1>
       <LogoMobile />
       <div
         className="flex grow flex-col"

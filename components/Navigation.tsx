@@ -33,7 +33,7 @@ export default observer(function Navigation() {
           {/* <NavLink href="/tipps" text="Tipps" /> */}
           {/* <NavLink href="/standorte" text="Standorte" /> */}
           {/* <NavLink href="/service" text="Service" /> */}
-          {/* <NavLink href="/mitmachen/bewerben" text="Bewerben" /> */}
+          <NavLink href="/mitmachen/bewerben" text="Bewerben" />
           <NavLink href="/das-festival/konzept" text="Das Festival" />
           <div
             className={`mb-4 mt-1 text-lg ${

@@ -60,7 +60,7 @@ export default observer(function NavMobile() {
               News
             </a>
           </Link>
-          {/* <Link href="/mitmachen/bewerben">
+          <Link href="/mitmachen/bewerben">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
@@ -68,7 +68,7 @@ export default observer(function NavMobile() {
               Bewerben
             </a>
           </Link>
-          <Link href="/tipps">
+          {/* <Link href="/tipps">
             <a
               onClick={() => (d.category = "")}
               className={"block h-12 w-full text-center text-xl"}
