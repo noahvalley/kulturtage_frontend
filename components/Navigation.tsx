@@ -34,26 +34,27 @@ export default observer(function Navigation() {
           {/* <NavLink href="/standorte" text="Standorte" /> */}
           {/* <NavLink href="/service" text="Service" /> */}
           <NavLink href="/mitmachen/bewerben" text="Bewerben" />
-          <NavLink href="/das-festival/konzept" text="Das Festival" />
-          <div
+          <NavLink href="https://www.kulturmacherei.ch" text="Über Uns" />
+          {/* <NavLink href="/das-festival/konzept" text="Das Festival" /> */}
+          {/* <div
             className={`mb-4 mt-1 text-lg ${
               router.asPath.startsWith("/das-festival") ? "block" : "hidden"
             }`}
-          >
-            <NavLink href="/das-festival/konzept" text="Konzepts" />
-            <NavLink href="/das-festival/ursprung" text="Ursprung" />
-          </div>
-          <NavLink href="/ueber-uns/der-verein" text="Über uns" />
-          <div
+          > */}
+          {/* <NavLink href="/das-festival/konzept" text="Konzepts" /> */}
+          {/* <NavLink href="/das-festival/ursprung" text="Ursprung" /> */}
+          {/* </div> */}
+          {/* <NavLink href="/ueber-uns/der-verein" text="Über uns" /> */}
+          {/* <div
             className={`mb-4 mt-1 text-lg ${
               router.asPath.startsWith("/ueber-uns") ? "block" : "hidden"
             }`}
-          >
-            <NavLink href="/ueber-uns/der-verein" text="Der Verein" />
-            <NavLink href="/ueber-uns/team" text="Team" />
-            <NavLink href="/ueber-uns/kontakt" text="Kontakt" />
-            <NavLink href="/ueber-uns/unterstutzung" text="Unterstützung" />
-          </div>
+          > */}
+          {/* <NavLink href="/ueber-uns/der-verein" text="Der Verein" /> */}
+          {/* <NavLink href="/ueber-uns/team" text="Team" /> */}
+          {/* <NavLink href="/ueber-uns/kontakt" text="Kontakt" /> */}
+          {/* <NavLink href="/ueber-uns/unterstutzung" text="Unterstützung" /> */}
+          {/* </div> */}
         </div>
       </section>
       {/* <section className="text-lg text-gray xl:text-xl">

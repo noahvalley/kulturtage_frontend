@@ -92,7 +92,7 @@ export default observer(function NavMobile() {
               Service
             </a>
           </Link> */}
-          <button
+          {/* <button
             onClick={() =>
               (d.category = d.category === "das-festival" ? "" : "das-festival")
             }
@@ -111,7 +111,7 @@ export default observer(function NavMobile() {
             href="/das-festival/ursprung"
             text="Ursprung"
             show={d.category === "das-festival"}
-          />
+          /> */}
           {/*<button*/}
           {/*  onClick={() =>*/}
           {/*    (d.category = d.category === "mitmachen" ? "" : "mitmachen")*/}
@@ -132,6 +132,16 @@ export default observer(function NavMobile() {
           {/*  text="Bewerben"*/}
           {/*  show={d.category === "mitmachen"}*/}
           {/*/>*/}
+          <Link href="/news">
+            <a
+              href="https://www.kulturmacherei.ch"
+              className={"block h-12 w-full text-center text-xl"}
+            >
+              Über Uns
+            </a>
+          </Link>
+
+          {/*
           <button
             onClick={() =>
               (d.category = d.category === "ueber-uns" ? "" : "ueber-uns")
@@ -161,7 +171,7 @@ export default observer(function NavMobile() {
             href="/ueber-uns/unterstutzung"
             text="Unterstützung"
             show={d.category === "ueber-uns"}
-          />
+          /> */}
         </div>
 
         <div className="mb-4 flex w-full items-center justify-between px-3 text-sm">
@@ -194,14 +204,17 @@ function NavLink({
   href,
   text,
   show,
+  targetBlank,
 }: {
   href: string
   text: string
   show?: boolean
+  targetBlank?: boolean
 }) {
   return (
     <Link href={href}>
       <a
+        target={targetBlank ? "_blank" : "_self"}
         className={`block ${
           show ? "h-12" : "h-0"
         } duration-500 overflow-hidden text-center text-xl transition-all`}
