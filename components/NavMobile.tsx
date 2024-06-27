@@ -134,7 +134,7 @@ export default observer(function NavMobile() {
           {/*/>*/}
           <Link href="/news">
             <a
-              href="https://www.kulturmacherei.ch"
+              href="https://kulturmacherei.ch/kulturtage/team/"
               className={"block h-12 w-full text-center text-xl"}
             >
               Über Uns

@@ -34,7 +34,10 @@ export default observer(function Navigation() {
           {/* <NavLink href="/standorte" text="Standorte" /> */}
           {/* <NavLink href="/service" text="Service" /> */}
           <NavLink href="/mitmachen/bewerben" text="Bewerben" />
-          <NavLink href="https://www.kulturmacherei.ch" text="Über Uns" />
+          <NavLink
+            href="https://kulturmacherei.ch/kulturtage/team/"
+            text="Über Uns"
+          />
           {/* <NavLink href="/das-festival/konzept" text="Das Festival" /> */}
           {/* <div
             className={`mb-4 mt-1 text-lg ${
